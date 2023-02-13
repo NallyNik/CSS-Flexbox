@@ -1,0 +1,91 @@
+@import url('../css/reset.css');
+
+h1 {
+    font-weight: 600;
+    font-size: 20px;
+}
+h3 {
+    font-weight: 600;
+    font-size: 14px;
+}
+p {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+header {
+    width: 100%;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+header section {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+}
+header .search {
+    justify-content: center;
+    flex: 5;
+}
+header .search input {
+    min-width: 30%;
+    border: 1px solid black;
+}
+header .search figure {
+    border: 1px solid black;
+    background-color: #CCCCCC;   
+}
+header .search figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content{   
+    padding: 2%;
+    display: flex;
+}
+main {
+    width: 70%;
+    box-sizing: border-box;
+    padding: 0 1%;
+}
+main iframe {
+    width: 100%;
+    height: 100%;
+}
+main .barr {
+    height: 50px;
+    margin: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+main .barr figure {
+    display: flex;
+    align-items: center;
+}
+main .barr figure img{
+    width: 50%;
+    height: 50%;
+    object-fit: scale-down;
+    flex: 1;
+}
+#logo img, #button img{
+    height: 100%;
+}
+main p {
+    font-size: 14px;
+}
+
+aside{
+    width: 30%;
+    display: flex;
+}
+aside li {
+    max-height: 90px;
+    display: flex;
+}
+aside li iframe{
+    width: 160px;
+    height: 90px;
+}
