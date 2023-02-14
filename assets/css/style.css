@@ -24,6 +24,12 @@ header section {
     justify-content: space-around;
     flex: 1;
 }
+header .header:hover {
+    background-size:contain;
+    background-color: lightgray;
+    border: 1px none lightgray;
+    border-radius: 50%;
+}
 header .search {
     justify-content: center;
     flex: 5;
@@ -39,7 +45,7 @@ header .search figure {
 header .search figure img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: scale-down;
 }
 .content{   
     padding: 2%;
@@ -50,21 +56,26 @@ main {
     box-sizing: border-box;
     padding: 0 1%;
 }
+main .video {
+    width: 100%;
+    height: 50%;
+    padding: 0 0 4%;
+}
 main iframe {
     width: 100%;
     height: 100%;
 }
-main .barr {
+main .bar {
     height: 50px;
     margin: 1%;
     display: flex;
     justify-content: space-between;
 }
-main .barr figure {
+main .bar figure {
     display: flex;
     align-items: center;
 }
-main .barr figure img{
+main .bar figure img{
     width: 50%;
     height: 50%;
     object-fit: scale-down;
@@ -73,19 +84,59 @@ main .barr figure img{
 #logo img, #button img{
     height: 100%;
 }
-main p {
+main .text {
+    padding: 2% 0;
     font-size: 14px;
+    line-height: 1.5;
 }
 
-aside{
+aside {
     width: 30%;
     display: flex;
+    
 }
 aside li {
     max-height: 90px;
     display: flex;
+    margin: 0 1% 2%;
 }
-aside li iframe{
+aside li figure {
+    position: relative;
     width: 160px;
     height: 90px;
+}
+aside li figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+aside li figure .nail {
+    position: relative;
+    z-index: 1;
+}
+aside li figure .hide {
+    position: absolute;
+    left: 0;    
+}
+aside li .nail:hover {
+    z-index: -1;
+}
+aside li .details {
+    margin: 0 2%;
+}
+footer {
+    width: 100%;
+    max-height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px dashed black;
+}
+footer a {
+    height: 2rem;
+    box-sizing: border-box;
+    padding: 0.2rem 1rem;
+}
+footer a img {
+    height: 100%;
 }
