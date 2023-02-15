@@ -12,9 +12,9 @@ p {
     font-weight: 400;
     font-size: 12px;
 }
-
 header {
     width: 100%;
+    height: 50px;
     padding: 1%;
     display: flex;
     justify-content: space-between;
@@ -22,12 +22,14 @@ header {
 header section {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     flex: 1;
 }
+header .header {
+    padding: 25%;
+}
 header .header:hover {
-    background-size:contain;
-    background-color: lightgray;
-    border: 1px none lightgray;
+    background-color: rgb(228, 228, 228);
     border-radius: 50%;
 }
 header .search {
@@ -36,11 +38,12 @@ header .search {
 }
 header .search input {
     min-width: 30%;
+    min-height: 2rem;
     border: 1px solid black;
 }
 header .search figure {
     border: 1px solid black;
-    background-color: #CCCCCC;   
+    background-color: rgb(228, 228, 228);   
 }
 header .search figure img {
     width: 100%;
@@ -52,13 +55,13 @@ header .search figure img {
     display: flex;
 }
 main {
-    width: 70%;
+    width: 75%;
     box-sizing: border-box;
     padding: 0 1%;
 }
 main .video {
     width: 100%;
-    height: 50%;
+    height: 537px;
     padding: 0 0 4%;
 }
 main iframe {
@@ -69,17 +72,26 @@ main .bar {
     height: 50px;
     margin: 1%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;   
 }
 main .bar figure {
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+main .bar-figure {
+    padding: 0 2rem;
+}
+main .bar-figure:hover {
+    background-color: rgb(228, 228, 228);
+    border-radius: 2rem;
 }
 main .bar figure img{
     width: 50%;
     height: 50%;
     object-fit: scale-down;
     flex: 1;
+    margin-right: 8%;
 }
 #logo img, #button img{
     height: 100%;
@@ -91,37 +103,40 @@ main .text {
 }
 
 aside {
-    width: 30%;
+    width: 25%;
+    margin-left: 1%;
+}
+aside ul {
     display: flex;
-    
+    flex-direction: column-reverse;
 }
 aside li {
     max-height: 90px;
     display: flex;
-    margin: 0 1% 2%;
+    margin: 0 1% 3%;
 }
-aside li figure {
+aside figure {
     position: relative;
     width: 160px;
     height: 90px;
 }
-aside li figure img{
-    width: 100%;
+aside img{
+    width: 160px;
     height: 100%;
     object-fit: cover;
 }
-aside li figure .nail {
+aside .nail {
     position: relative;
     z-index: 1;
 }
-aside li figure .hide {
+aside .hide {
     position: absolute;
     left: 0;    
 }
-aside li .nail:hover {
+aside .nail:hover {
     z-index: -1;
 }
-aside li .details {
+aside .details {
     margin: 0 2%;
 }
 footer {
@@ -137,6 +152,6 @@ footer a {
     box-sizing: border-box;
     padding: 0.2rem 1rem;
 }
-footer a img {
+footer img {
     height: 100%;
 }
